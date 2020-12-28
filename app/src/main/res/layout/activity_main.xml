@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:id="@+id/fl_fragment_content">
+   </FrameLayout>
+
+
+    <LinearLayout
+        android:background="#d8d9d9"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/rl_folder_layout">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:id="@+id/iv_folder"
+                android:src="@drawable/folder_page_selector"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_folder"
+                android:text="@string/folder"
+                android:textSize="13sp"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_below="@+id/iv_folder"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/rl_collections_layout">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:id="@+id/iv_collections"
+                android:src="@drawable/collections_page_selector"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_collections"
+                android:text="@string/collections"
+                android:textSize="13sp"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_below="@+id/iv_collections"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/rl_account_layout">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:id="@+id/iv_account"
+                android:src="@drawable/account_page_selector"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_account"
+                android:text="@string/account"
+                android:textSize="13sp"
+                android:textColor="@drawable/text_color_selector"
+                android:layout_below="@+id/iv_account"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
